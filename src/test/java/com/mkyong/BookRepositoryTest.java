@@ -1,5 +1,7 @@
 package com.mkyong;
 
+import com.mkyong.entity.Book;
+import com.mkyong.repository.BookRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +24,7 @@ public class BookRepositoryTest {
     @Autowired
     private BookRepository repository;
 
-    @Test
+   @Test
     public void testFindByName() {
 
         entityManager.persist(new Book("C++"));
